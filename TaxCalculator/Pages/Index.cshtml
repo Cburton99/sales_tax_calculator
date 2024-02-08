@@ -1,0 +1,134 @@
+﻿@page
+@using TaxCalculator.Models
+@using TaxCalculator.Models.Database
+@model TaxCalculator.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+@if (Model.IsCheckout)
+{
+    <div class="card">
+        <div class="card-body">
+            <h2>Checkout</h2>
+            <span>Below are the products with tax's added.</span>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Original Price</th>
+                        <th>Price After Tax</th>
+                        <th>Taxed Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (ProductReceiptItem product in Model.PurchasedProducts.TaxedProducts)
+                    {
+                        <tr>
+                            <th>
+                                @product.Name
+                            </th>
+                            <th>
+                                $@product.OriginalPrice
+                            </th>
+                            <th>
+                                $@product.PriceAfterTax
+                            </th>
+                            <th> 
+                                $@product.TaxAmount
+                            </th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4">
+                    <span>Total Before Tax : @Model.PurchasedProducts.Total</span>
+                </div>
+                <div class="col-4">
+                    <span>Taxed Paid : @(Model.PurchasedProducts.TotalAfterTax - Model.PurchasedProducts.Total)</span>
+                </div>
+                <div class="col-4">
+                    <span>Total After Tax : @Model.PurchasedProducts.TotalAfterTax</span>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="card">
+        <div class="card-body">
+            <h2>Shop</h2>
+            <h5 class="text-muted">All items prices are shown BEFORE tax calculations. All Tax for purchase products will be visible upon your receipt and before final checkout.</h5>
+        </div>
+    </div>
+
+    @foreach (IGrouping<string, Product> groupedProducts in Model.Products.GroupBy(product => product.Category.Name))
+    {
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2>@groupedProducts.Key</h2>
+            
+                <hr />
+
+                @foreach (Product product in groupedProducts)
+                {
+                    <div class="row mt-2">
+                        <div class="col-8">
+                            <span>@product.Name</span>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="float-end btn btn-primary" onclick="buyProduct(@product.ProductId, @product.Price)">Buy ($@product.Price)</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4">
+                    <span id="checkout-amount">Total : </span>
+                </div>
+
+                <div class="col-8">
+                    <form method="POST" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken();
+                        <input name="basket-ids" type="text" hidden="true" id="checkout-basket-ids"/>
+
+                        <button button="submit" class="btn btn-success float-end">Checkout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<script>
+    __BASKET = [];
+    __TOTAL = 0.00;
+
+    function buyProduct(productId, price) 
+    {
+        __BASKET.push(productId);
+        __TOTAL += price;
+
+        document.getElementById("checkout-amount").innerText = "Total : " + Math.round(__TOTAL * 100) / 100;
+
+        document.getElementById("checkout-basket-ids").value = __BASKET.join(",");
+    }
+</script>

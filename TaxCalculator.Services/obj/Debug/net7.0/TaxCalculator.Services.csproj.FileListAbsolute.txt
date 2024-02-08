@@ -1,0 +1,15 @@
+C:\repo\TaxCalculator\TaxCalculator.Services\bin\Debug\net7.0\TaxCalculator.Services.deps.json
+C:\repo\TaxCalculator\TaxCalculator.Services\bin\Debug\net7.0\TaxCalculator.Services.dll
+C:\repo\TaxCalculator\TaxCalculator.Services\bin\Debug\net7.0\TaxCalculator.Services.pdb
+C:\repo\TaxCalculator\TaxCalculator.Services\bin\Debug\net7.0\TaxCalculator.Models.dll
+C:\repo\TaxCalculator\TaxCalculator.Services\bin\Debug\net7.0\TaxCalculator.Models.pdb
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.csproj.AssemblyReference.cache
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.AssemblyInfoInputs.cache
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.AssemblyInfo.cs
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.csproj.CoreCompileInputs.cache
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.csproj.CopyComplete
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.dll
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\refint\TaxCalculator.Services.dll
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\TaxCalculator.Services.pdb
+C:\repo\TaxCalculator\TaxCalculator.Services\obj\Debug\net7.0\ref\TaxCalculator.Services.dll

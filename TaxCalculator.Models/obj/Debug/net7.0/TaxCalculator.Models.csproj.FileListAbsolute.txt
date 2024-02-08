@@ -1,0 +1,11 @@
+C:\repo\TaxCalculator\TaxCalculator.Models\bin\Debug\net7.0\TaxCalculator.Models.deps.json
+C:\repo\TaxCalculator\TaxCalculator.Models\bin\Debug\net7.0\TaxCalculator.Models.dll
+C:\repo\TaxCalculator\TaxCalculator.Models\bin\Debug\net7.0\TaxCalculator.Models.pdb
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\TaxCalculator.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\TaxCalculator.Models.AssemblyInfoInputs.cache
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\TaxCalculator.Models.AssemblyInfo.cs
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\TaxCalculator.Models.csproj.CoreCompileInputs.cache
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\TaxCalculator.Models.dll
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\refint\TaxCalculator.Models.dll
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\TaxCalculator.Models.pdb
+C:\repo\TaxCalculator\TaxCalculator.Models\obj\Debug\net7.0\ref\TaxCalculator.Models.dll
