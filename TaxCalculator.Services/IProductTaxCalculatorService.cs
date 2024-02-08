@@ -1,4 +1,5 @@
-﻿using TaxCalculator.Models.Database;
+﻿using TaxCalculator.Models;
+using TaxCalculator.Models.Database;
 
 namespace TaxCalculator.Services;
 

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TaxCalculator.Models.Database;
-using TaxCalculator.Models.Enums;
 
 namespace TaxCalculator.Services.Contexts;
 

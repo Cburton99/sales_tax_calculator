@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using TaxCalculator.Models;
 using TaxCalculator.Models.Database;
-using TaxCalculator.Models.Enums;
 using TaxCalculator.Services;
 using TaxCalculator.Services.Repositories;
 
@@ -10,7 +10,7 @@ public class IndexModel : PageModel
 {
     public ProductReceipt PurchasedProducts { get; set; }
 
-    public bool IsCheckout { get; set; } = false;
+    public bool IsCheckout { get; set; }
 
     public List<Product> Products { get; set; }
 

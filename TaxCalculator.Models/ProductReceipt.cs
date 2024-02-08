@@ -1,7 +1,4 @@
-﻿using TaxCalculator.Models;
-using TaxCalculator.Models.Database;
-
-namespace TaxCalculator.Services;
+﻿namespace TaxCalculator.Models;
 
 public class ProductReceipt
 {

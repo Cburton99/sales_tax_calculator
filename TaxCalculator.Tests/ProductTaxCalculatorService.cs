@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
+using TaxCalculator.Models;
 using TaxCalculator.Models.Database;
 using TaxCalculator.Services;
 using TaxCalculator.Services.Contexts;
