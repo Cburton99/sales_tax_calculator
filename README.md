@@ -57,6 +57,16 @@ This information is not part of the Category table since products under the same
 
 Upon establishing the database, a straightforward web interface was implemented, resembling a virtual shop. Users can add items to their basket, and during checkout, the system displays a page presenting the sales tax for each item alongside summary information.
 
+Due to time limitations the UI is very basic and lacks some UX/QOL features.
+
+To use the UI Click the Buy button only once for the item you wish to buy.
+
+Once that button is clicked you can confirm if its been added or not by checking the total at the bottom of the screen near the checkout button.
+
+Once you are happy with your selection click checkout, this will present you with a summary of all your products alongside the sales tax calculations.
+
+$ - Was because my keyboard is stuck in Amercian format at the moment 0 so please assume they are GBP Currency.
+
 ## Testing
 
 To ensure comprehensive coverage of test scenarios, the solution incorporates unit tests. These tests evaluate the accuracy of the Product tax calculation service against predefined scenarios, enhancing the overall reliability and robustness of the system.
